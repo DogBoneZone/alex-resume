@@ -5,6 +5,7 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 /************************* 
@@ -12,23 +13,32 @@ html {
 **************************/
 #main-sidebar {
     position: absolute;
+    overflow-x: hidden;
+    transition: 0.3s;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 0;
     height: 100%;
     border: 1px solid;
-    background-color: rgb(177, 177, 177);
-    visibility: hidden;
+    background-color: rgba(177, 177, 177, 0.74);
 }
 
-#main-sidebar .active {
-    visibility: visible;
+.active {
+    width: 300px !important;
 }
 
 
 /************************* 
     Main Page
 **************************/
+.main-page {
+    height: 100%;
+}
+
+.main0-segment {
+    height: 100%;
+}
+
 .title-segment {
     border: 1px solid;
     background-color: gray;
