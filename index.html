@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script type="module" src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/aa043a69b2.js" crossorigin="anonymous"></script>
     <title>Alex's Resume</title>
 </head>
 <body>
     <div id="main-sidebar">
-        <div class="control-menu">
-            <i class="fa-solid fa-bars toggle-sidebar"></i>
+        <div class="sidebar-control-menu">
+            <button type="button">
+                <i class="fa-solid fa-rectangle-xmark toggle-sidebar"></i>
+            </button>
         </div>
         <div class="project-list">
             <ul>
@@ -26,7 +29,9 @@
     <div class="main-page">
         <div class="title-segment segment">
             <div class="control-menu">
-                <i class="fa-solid fa-bars toggle-sidebar"></i>
+                <button type="button">
+                    <i class="fa-solid fa-bars toggle-sidebar"></i>
+                </button>
             </div>
             <div class="icon-links-container">
                 <div class="icon-links">
@@ -39,6 +44,12 @@
         </div>
         <div class="main-segment segment">
             <div class="contact-container"></div>
+            <div class="about-me">
+                <h1>About Me</h1>
+                <div>
+                    Hey there, I'm Alex. 
+                </div>
+            </div>
         </div>
     </div>
 </body>

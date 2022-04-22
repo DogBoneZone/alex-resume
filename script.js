@@ -1,4 +1,3 @@
-
 function createContactElement() {
     let self = {
         name: 'Alex Hernandez',
