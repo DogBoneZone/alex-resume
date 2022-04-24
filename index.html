@@ -18,16 +18,17 @@
             </button>
         </div>
         <div class="project-list">
+            <h1>Project List</h1>
             <ul>
                 <li><a href="https://dogbonezone.github.io/calculator/">Calculator</a></li>
                 <li>
-                    <a href="https://gitlab.com/DogBoneZone/afmbe">All Flesh Must Be Eaten (Unofficial)</a>
+                    <a href="templates/afmbe-project.html">All Flesh Must Be Eaten (Unofficial)</a>
                 </li>
                 <li>
-                    <a href="https://gitlab.com/DogBoneZone/uesrpg-3e">Unofficial Elder Scrolls RPG</a>
+                    <a href="templates/uesrpg-project.html">Unofficial Elder Scrolls RPG</a>
                 </li>
                 <li>
-                    <a href="https://gitlab.com/DogBoneZone/mythras-not-so-imperative">Mythras Not-So-Imperative</a>
+                    <a href="templates/mythras-project.html">Mythras Not-So-Imperative</a>
                 </li>
             </ul>
         </div>
@@ -35,12 +36,10 @@
 
     <div class="main-page">
         <div class="title-segment">
-            <div class="control-menu">
-                <button type="button">
-                    <i class="fa-solid fa-bars toggle-sidebar"></i>
-                </button>
-                <label>Projects</label>
-            </div>
+            <nav class="control-menu">
+                <a class="fa-solid fa-bars toggle-sidebar"></a>
+                <a href="./index.html">Home</a>
+            </nav>
             <div class="icon-links-container">
                 <div class="icon-links">
                     <a class="fa-brands fa-linkedin"></a>
@@ -51,17 +50,64 @@
             </div>
         </div>
         <div class="main-segment">
-            <div class="contact-container"></div>
-            <div class="about-me content-block">
-                <h1>About Me</h1>
-                <div>
-                    Hey there, I'm Alex. 
+            <div class="contact-container">
+                <img id="self-portrait" src="../alex-resume/images/shrek-portrait.webp" alt="Alex Hernandez">
+                <div class="contact-info">
+                    <label class="title-name self">Alex Hernandez</label>
+                    <label class="title-name">Ecommerce Specialist & Developer</label>
+                    <label>alexrhern@gmail.com</label>
                 </div>
             </div>
-            <div class="content-block">
-                <h1>Experience</h1>
-                <div>
-                    Past projects and some other shit.
+
+            <div class="content-container">
+                <div class="content-block">
+                    <div class="info-block">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="info-block">
+                        <div>
+                            Hey there, I'm Alex. I'm an experienced ecommerce specialist and an aspiring web developer who is always looking to learn something new.
+                            My professional background in ecommerce includes <span class="text-highlight">Product Development, Amazon/Walmart channel management, PPC, and Marketing.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block">
+                    <div class="info-block">
+                        <h1>Skills & Technologies</h1>
+                    </div>
+                    <div class="info-block">
+                        <div class="skill-list">
+                            <div class="skill-tech">
+                                <i class="fa-brands fa-js fa-4x" title="Javascript"></i>
+                                <label>Javascript</label>
+                            </div>
+                            <div class="skill-tech">
+                                <i class="fa-brands fa-css3 fa-4x"></i>
+                                <label>CSS</label>
+                            </div>
+                            <div class="skill-tech">
+                                <i class="fa-brands fa-html5 fa-4x"></i>
+                                <label>HTML</label>
+                            </div>
+                            <div class="skill-tech">
+                                <i class="fa-brands fa-trello fa-4x"></i>
+                                <label>Trello</label>
+                            </div>
+                            <div class="skill-tech">
+                                <i class="fa-brands fa-amazon fa-4x" title="Amazon Seller Central"></i>
+                                <label>Seller Central</label>
+                            </div>
+                            <div class="skill-tech">
+                                <img src="./images/walmart-icon.png" title="Walmart Seller Center" height="42">
+                                <label>Seller Center</label>
+                            </div>
+                            <div class="skill-tech">
+                                <img src="./images/salsify-icon.png" title="Salsify" height="42">
+                                <label>Salsify</label>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>

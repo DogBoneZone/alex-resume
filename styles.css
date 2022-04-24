@@ -6,9 +6,12 @@ html {
     font-size: 14px;
     padding: 0;
     margin: 0;
-    height: 100%;
-    background-image: linear-gradient(to right, #313131, #1b1b1b);
+    background-color: rgb(34, 34, 34);
     color: rgb(233, 233, 233);
+}
+
+body {
+    height: 100%;
 }
 
 button:hover {
@@ -26,6 +29,11 @@ a {
 
 a:hover {
     color: white;
+    cursor: pointer;
+}
+
+.text-highlight {
+    color: rgb(93, 206, 149);
 }
 
 /************************* 
@@ -54,7 +62,15 @@ a:hover {
     justify-content: flex-end;
 }
 
-.project-list ul li{
+.project-list {
+    padding: 0 5px;
+}
+
+.project-list h1 {
+    padding: 0 0 0 20px;
+}
+
+.project-list ul li {
     padding: 5px 10px 0 0;
 }
 
@@ -88,7 +104,7 @@ a:hover {
     display: flex;
     align-items: center;
     padding: 5px 8px;
-    gap: 5px;
+    gap: 10px;
 }
 
 .main-segment {
@@ -102,6 +118,9 @@ a:hover {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    background-image: url('./images/catalina-island.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-info {
@@ -129,6 +148,7 @@ a:hover {
     align-items: center;
     justify-content: space-around;
     gap: 10px;
+    font-size: 20px;
 }
 
 .icon-links > a {
@@ -143,26 +163,109 @@ a:hover {
     cursor: pointer;
 }
 
+/************************* 
+    Main Page - Content Blocks
+**************************/
+.content-container {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 10px;
+    gap: 10px;
+}
+
 .content-block {
-    padding: 5px 10px;
+    padding: 15px;
+    border-radius: 20px;
     background-color:rgba(59, 59, 59, 0.637);
 }
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.skill-tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 80px;
+    height: 60px;
+    font-size: 10px;
+}
+
+.self {
+    font-size: 24px;
+}
+
+
+/************************* 
+    Project Pages
+**************************/
+.project-banner {
+    width: 100%;
+    height: 50vh;
+}
+
+.carousel .image-controls-flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slide-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    list-style: none;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.slide > img {
+    width: 100%;
+}
+
 
 /**************************
     For Larger Screens
 **************************/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0 25%;
+        padding: 0 20px;
     }
 
     #self-portrait {
         width: 300px;
         height: 300px;
+    }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+    }
+    
+    .content-block {
+        padding: 15px;
+        border-radius: 20px;
+        background-color:rgba(59, 59, 59, 0.637);
     }
 }
